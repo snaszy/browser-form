@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Form</title>
+    <link rel='stylesheet' href='style.css'>
+    <script src='script.js' defer></script>
+</head>
+<body>
+    <form>
+        <p>
+            <label for='email'>
+                <span>Email Address:</span>
+                <input type='email' id='email' name='email' required>
+                <span class='error' aria-live='polite'></span>
+            </label>
+        </p>
+        <p>
+            <label for='country'>
+                <span>Country:</span>
+                <input type='text' id='country' name='country' required>
+                <span class='error' aria-live='polite'></span>
+            </label>
+        </p>
+        <p>
+            <label for='zipcode'>
+                <span>Zip Code:</span>
+                <input type='number' id='zip' name='zip' required>
+                <span class='error' aria-live='polite'></span>
+            </label>
+        </p>
+        <p>
+            <label for='password'>
+                <span>Password:</span>
+                <input type='text' id='password' name='password' required>
+                <span class='error' aria-live='polite'></span>
+            </label>
+        </p>
+        <p>
+            <label for='password-confirmation'>
+                <span>Confirm Password:</span>
+                <input type='text' id='password-confirmation' name='password-confirmation' required>
+                <span class='error' aria-live='polite'></span>
+            </label>
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
