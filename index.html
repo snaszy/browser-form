@@ -9,7 +9,7 @@
     <script src='script.js' defer></script>
 </head>
 <body>
-    <form>
+    <form novalidate>
         <p>
             <label for='email'>
                 <span>Email Address:</span>
@@ -27,14 +27,15 @@
         <p>
             <label for='zipcode'>
                 <span>Zip Code:</span>
-                <input type='number' id='zip' name='zip' required>
+                <input type='text' id='zipcode' name='zipcode' required pattern='\d+'>
                 <span class='error' aria-live='polite'></span>
             </label>
         </p>
         <p>
             <label for='password'>
                 <span>Password:</span>
-                <input type='text' id='password' name='password' required>
+                <input type='text' id='password' name='password' required minlength='8'>
+                <span class='subtext'>Needs to be at least 8 characters long.</span>
                 <span class='error' aria-live='polite'></span>
             </label>
         </p>

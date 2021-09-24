@@ -1,0 +1,26 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+label, button {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+button {
+    width: 100%;
+    align-items: center;
+}
+.active {
+    color: rgb(204, 0, 0);
+}
+.correct {
+    color: rgb(0, 255, 34);
+}
+span:before {
+    content: '\200b';
+}
+.subtext, .error {
+    font-size: .7rem;
+}
